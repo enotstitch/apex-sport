@@ -4,11 +4,12 @@ $mobile-width: 420;
 
 :root {
 	// * Цвета
-	--dark-color: #000;
+	--dark-color: #1d1d1d;
 	--light-color: #fff;
-	--bg-color: #e27d5f;
-	--accent-color: #9fd4ff;
+	--bg-color: #f4f1ff;
+	--accent-color: #845bff;
 	--error-color: #f06464;
+	--border-color: #dadada;
 
 	// * Шрифты
 	--font-main: 'Montserrat', sans-serif;
@@ -20,5 +21,5 @@ $mobile-width: 420;
 	--radius: 15px;
 
 	// * Медиа бургера
-	--mobile-width: 768;
+	--mobile-width: 992;
 }
