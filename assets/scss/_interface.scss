@@ -1,4 +1,5 @@
 @use './chunk/burger-menu';
+@use './mixins/adaptive-font' as *;
 
 .logo {
 	display: flex;
@@ -66,7 +67,11 @@
 	transition: filter var(--time);
 
 	&:hover {
-		filter: brightness(85%);
+		filter: brightness(90%);
+	}
+
+	&--bg-red {
+		background-color: var(--second-accent-color);
 	}
 }
 
@@ -96,6 +101,103 @@
 
 		&:hover {
 			transform: scale(1.2);
+		}
+	}
+}
+
+.sidebar {
+	padding: 65px 0;
+
+	&__nav {
+		position: sticky;
+		top: 65px;
+	}
+}
+
+.sidebar-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 30px;
+	padding: 40px 35px;
+	max-width: 300px;
+	box-shadow: 0 0 12px 0 rgb(0 0 0 / 7%);
+	background: var(--bg-color);
+
+	&__item {
+		position: relative;
+		border-radius: 5px;
+		padding: 8px;
+		font-family: var(--font-main);
+		font-weight: 600;
+		font-size: 16px;
+		line-height: var(--line-height);
+		text-align: center;
+		transition:
+			color var(--time),
+			background-color var(--time);
+		cursor: pointer;
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: 50%;
+			bottom: -5px;
+			width: 30px;
+			height: 1px;
+			background-color: var(--border-color);
+			transform: translate(50%, 50%);
+		}
+
+		&:hover {
+			color: var(--light-color);
+			background-color: var(--accent-color);
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.main-title {
+	margin: 0;
+	font-family: var(--font-main);
+	font-weight: 800;
+	@include adaptive-font(52, 30);
+
+	&--color-red {
+		color: var(--second-accent-color);
+	}
+}
+
+.text {
+	margin: 0;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	&__item {
+		position: relative;
+		padding-left: 20px;
+		font-weight: 600;
+		font-size: 16px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			border-radius: 50%;
+			width: 9px;
+			height: 9px;
+			background-color: #b59dff;
+			transform: translateY(-50%);
 		}
 	}
 }

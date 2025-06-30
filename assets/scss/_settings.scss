@@ -18,7 +18,6 @@ body {
 	height: 100%;
 	font-family: var(--font-second);
 	font-weight: 400;
-	line-height: var(--line-height);
 	color: var(--dark-color);
 	background-color: var(--light-color);
 	@include adaptive-font(18, 16);
@@ -37,12 +36,21 @@ body {
 
 .main {
 	flex: 1 1 auto;
+	max-width: 750px;
+}
+
+.section {
+	padding: 65px 0;
 }
 
 .container {
+	display: flex;
+	justify-content: space-between;
 	margin: 0 auto;
 	padding: 0 15px;
+	width: 100%;
 	max-width: $container-width + px;
+	gap: 40px;
 }
 
 img {

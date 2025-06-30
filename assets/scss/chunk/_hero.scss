@@ -1,0 +1,22 @@
+.hero {
+	&__content {
+		margin-bottom: 55px;
+		border-radius: 30px;
+		padding: 50px;
+		width: 100%;
+		background: var(--bg-color);
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	&__links {
+		display: flex;
+		gap: 30px;
+	}
+}

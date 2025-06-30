@@ -1,16 +1,19 @@
+@use 'vars' as *;
+
 .header {
 	position: static;
 	z-index: 10;
 	border-bottom: 1px solid var(--border-color);
 	width: 100%;
-	background-color: var(--white-color);
+	background-color: var(--light-color);
 
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		margin: 0 auto;
+		padding: 15px;
+		max-width: $container-width + px;
 	}
 
 	&--sticky {
