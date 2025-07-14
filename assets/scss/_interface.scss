@@ -244,3 +244,40 @@
 .is-hidden {
 	display: none;
 }
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	&__item {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	&__title {
+		font-family: var(--font-main);
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	&__link {
+		transition: color var(--time);
+
+		&:hover {
+			color: var(--dark-color);
+		}
+	}
+}
