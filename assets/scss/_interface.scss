@@ -206,3 +206,34 @@
 		}
 	}
 }
+
+.info-card {
+	margin-bottom: 60px;
+
+	&__title {
+		position: relative;
+		margin: 0;
+		margin-bottom: 20px;
+		padding-left: 50px;
+		font-family: var(--font-main);
+		font-size: 38px;
+		text-transform: uppercase;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			border-radius: 30px;
+			width: 40px;
+			height: 4px;
+			background-color: var(--accent-color);
+			transform: translateY(-50%);
+		}
+	}
+
+	&__description {
+		margin: 0;
+		color: var(--grey-color);
+	}
+}
