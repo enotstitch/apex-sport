@@ -281,3 +281,41 @@
 		}
 	}
 }
+
+.input {
+	border: 1px solid var(--placeholder-color);
+	border-radius: 5px;
+	padding: 7px 15px;
+	width: 100%;
+	font-size: 16px;
+	transition: outline 0.1s;
+
+	&::placeholder {
+		color: var(--placeholder-color);
+	}
+
+	&:focus {
+		outline: 2px inset var(--accent-color);
+	}
+}
+
+.textarea {
+	min-height: 80px;
+	resize: none;
+}
+
+.submit {
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--light-color);
+	background-color: var(--accent-color);
+	transition: filter var(--time);
+	cursor: pointer;
+
+	&:hover {
+		filter: brightness(90%);
+	}
+}
