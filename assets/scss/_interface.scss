@@ -82,6 +82,14 @@
 	&--bg-red {
 		background-color: var(--second-accent-color);
 	}
+
+	&--bg-download {
+		padding-left: 65px;
+		background: url('../img/icons/sprite.svg#download'), var(--second-accent-color);
+		background-position: 20px center;
+		background-size: 31px;
+		background-repeat: no-repeat;
+	}
 }
 
 .connection {
@@ -176,6 +184,13 @@
 	&--color-red {
 		color: var(--second-accent-color);
 	}
+}
+
+.subtitle {
+	margin: 0;
+	font-family: var(--font-main);
+	font-weight: 600;
+	@include adaptive-font(24, 20);
 }
 
 .text {
