@@ -1,3 +1,4 @@
+/* stylelint-disable prettier/prettier */
 @use 'vars' as *;
 
 .header {
@@ -14,6 +15,13 @@
 		margin: 0 auto;
 		padding: 15px;
 		max-width: $container-width + px;
+	}
+
+	&__connection {
+		
+		@media (max-width: 1200px) {
+			display: none;
+		}
 	}
 
 	&--sticky {

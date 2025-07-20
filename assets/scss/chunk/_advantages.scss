@@ -1,0 +1,27 @@
+@use 'mixins/adaptive-font' as *;
+
+.advantages {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+.advantages-card {
+	border-radius: 10px;
+	padding: 25px 20px;
+	padding-left: 95px;
+	width: 100%;
+	max-width: 360px;
+	box-shadow: 0 0 10px 0 rgb(29 29 27 / 15%);
+	background-position: 20px center;
+	background-size: 55px;
+	background-repeat: no-repeat;
+	background-color: var(--light-color);
+
+	&__title {
+		margin-bottom: 5px;
+		@include adaptive-font(22, 20);
+	}
+}
