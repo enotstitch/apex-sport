@@ -1,18 +1,19 @@
 .installation-cards {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	gap: 10px;
 
 	&__link {
 		border-radius: 10px;
-		padding: 60px 35px 145px;
+		padding: 60px 35px 135px;
+		min-height: 243px;
 		max-width: 243px;
-		max-height: 243px;
 		font-weight: 600;
 		line-height: normal;
 		text-align: center;
 		color: var(--light-color);
-		background-position: center 125px;
+		background-position: bottom 60px center;
 		background-size: 60px;
 		background-repeat: no-repeat;
 		background-color: var(--light-accent-color);
@@ -21,10 +22,10 @@
 
 .installation-card {
 	border-radius: 10px;
-	padding: 15px 35px 195px;
+	padding: 15px 35px;
 	min-width: 243px;
+	min-height: 243px;
 	max-width: 243px;
-	max-height: 243px;
 	background-color: var(--plug-color);
 
 	&__text {
