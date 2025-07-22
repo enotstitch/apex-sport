@@ -1,0 +1,22 @@
+.pickup__addresses {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.pickup-wrap {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	&__icon {
+		width: 25px;
+		height: 25px;
+	}
+
+	&__address {
+		all: unset;
+		font-weight: 600;
+		font-size: 20px;
+	}
+}
