@@ -1,0 +1,32 @@
+.payment {
+	&__cards {
+		display: flex;
+		gap: 40px;
+	}
+
+	&__card {
+		border-radius: 10px;
+		padding: 25px 20px;
+		max-width: 355px;
+		background-color: var(--light-accent-color);
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 30px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: normal;
+		color: var(--light-color);
+	}
+
+	&__text {
+		margin-bottom: 20px;
+		font-size: 16px;
+		color: var(--light-color);
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
