@@ -7,7 +7,8 @@
 	&__card {
 		border-radius: 10px;
 		padding: 25px 20px;
-		max-width: 355px;
+		max-width: 375px;
+		color: var(--light-color);
 		background-color: var(--light-accent-color);
 	}
 
@@ -15,18 +16,19 @@
 		margin: 0;
 		margin-bottom: 30px;
 		font-weight: 600;
-		font-size: 18px;
-		line-height: normal;
-		color: var(--light-color);
+		font-size: 20px;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__text {
-		margin-bottom: 20px;
-		font-size: 16px;
-		color: var(--light-color);
-
-		&:last-child {
-			margin: 0;
-		}
+		font-size: 18px;
+		color: inherit;
 	}
 }
