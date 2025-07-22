@@ -288,6 +288,10 @@
 		font-size: 18px;
 	}
 
+	&__value {
+		font-style: normal;
+	}
+
 	&__link {
 		transition: color var(--time);
 
