@@ -1,7 +1,9 @@
-.pickup__addresses {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+.pickup {
+	&__addresses {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 }
 
 .pickup-wrap {
