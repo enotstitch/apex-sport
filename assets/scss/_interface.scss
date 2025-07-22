@@ -264,11 +264,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	margin-bottom: 60px;
 
 	&__item {
 		display: flex;
 		gap: 20px;
 		align-items: center;
+
+		&--left-padding {
+			padding-left: 40px;
+		}
 	}
 
 	&__icon {
@@ -298,6 +303,10 @@
 		&:hover {
 			color: var(--dark-color);
 		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 }
 
