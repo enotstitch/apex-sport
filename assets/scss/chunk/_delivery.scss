@@ -1,0 +1,26 @@
+.delivery {
+	&__text {
+		margin-bottom: 30px;
+		font-weight: 600;
+		font-size: 18px;
+		color: var(--dark-color);
+	}
+
+	&__cards {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		border-radius: 10px;
+		width: 100%;
+		min-height: 200px;
+		max-width: 200px;
+		box-shadow: 0 0 4px 0 rgb(29 29 27 / 25%);
+		background-position: center;
+		background-size: 175px;
+		background-repeat: no-repeat;
+		background-color: var(--light-color);
+	}
+}
