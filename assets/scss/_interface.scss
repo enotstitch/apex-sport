@@ -317,14 +317,13 @@
 	padding: 7px 15px;
 	width: 100%;
 	font-size: 16px;
-	transition: outline 0.1s;
 
 	&::placeholder {
 		color: var(--placeholder-color);
 	}
 
 	&:focus {
-		outline: 2px inset var(--accent-color);
+		outline: 1px inset var(--accent-color);
 	}
 }
 
