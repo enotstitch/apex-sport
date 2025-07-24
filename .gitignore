@@ -19,3 +19,22 @@ build/
 .env
 *.zip
 *.rar
+
+# MAC
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.Spotlight-V100
+
+.Trashes
+
+._*
+
+.metadata_never_index
+.VolumeIcon.icns
+
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.apdisk
