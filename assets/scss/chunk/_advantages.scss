@@ -2,21 +2,22 @@
 
 .advantages {
 	&__cards {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
 		gap: 20px;
+		grid-template: auto/repeat(2, 1fr);
 	}
 }
 
 .advantages-card {
+	display: flex;
+	flex-direction: column;
 	border-radius: 10px;
 	padding: 25px 20px;
-	padding-left: 95px;
-	width: 100%;
-	max-width: 360px;
+	padding-top: 90px;
 	box-shadow: 0 0 10px 0 rgb(29 29 27 / 15%);
-	background-position: 20px center;
-	background-size: 55px;
+	text-align: center;
+	background-position: top 20px center;
+	background-size: 50px;
 	background-repeat: no-repeat;
 	background-color: var(--light-color);
 
