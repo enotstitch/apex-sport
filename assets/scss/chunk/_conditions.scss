@@ -1,0 +1,29 @@
+.conditions {
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 30px;
+		padding: 40px;
+		box-shadow: 0 0 12px 0 rgb(0 0 0 / 7%);
+		background-color: var(--bg-color);
+		gap: 50px;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: var(--font-main);
+		font-weight: 600;
+		font-size: 26px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__form {
+		& p {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+		}
+	}
+}
