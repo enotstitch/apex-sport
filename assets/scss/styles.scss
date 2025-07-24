@@ -1,21 +1,19 @@
 // * Global styles (Шрифты, переменные)
-@use 'vars';
-@use 'fonts';
-@use 'settings';
-@use 'interface';
+@use "vars";
+@use "fonts";
+@use "settings";
+@use "interface";
 
 // * Main styles
-@use './chunk/header';
-@use './chunk/hero';
-@use './chunk/advantages';
-@use './chunk/offer';
-@use './chunk/categories';
-@use './chunk/contact';
-@use './chunk/hits';
-@use './chunk/delivery';
-@use './chunk/pickup';
-@use './chunk/payment';
-@use './chunk/installation';
-@use './chunk/pickup';
-@use './chunk/payment';
-@use './chunk/footer';
+@use "./chunk/header";
+@use "./chunk/hero";
+@use "./chunk/advantages";
+@use "./chunk/offer";
+@use "./chunk/categories";
+@use "./chunk/contact";
+@use "./chunk/hits";
+@use "./chunk/delivery";
+@use "./chunk/pickup";
+@use "./chunk/payment";
+@use "./chunk/installation";
+@use "./chunk/footer";
