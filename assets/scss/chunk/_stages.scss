@@ -1,0 +1,59 @@
+.stages {
+	&__cards {
+		counter-reset: card-num;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: calc(86px / 2);
+			bottom: 2%;
+			z-index: -1;
+			border: 3px var(--light-accent-color) dashed;
+			height: 95%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.stages-card {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+
+	&__num {
+		position: relative;
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 86px;
+		height: 86px;
+		font-family: var(--font-main);
+		font-weight: 700;
+		font-size: 40px;
+		text-align: center;
+		color: var(--light-color);
+		background-color: var(--light-accent-color);
+
+		&::before {
+			counter-increment: card-num;
+			content: counter(card-num);
+		}
+	}
+
+	&__inner {
+		padding-left: 95px;
+		background-position: left center;
+		background-size: 65px;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+}

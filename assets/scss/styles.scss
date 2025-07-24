@@ -8,6 +8,7 @@
 @use './chunk/header';
 @use './chunk/hero';
 @use './chunk/advantages';
+@use './chunk/stages';
 @use './chunk/offer';
 @use './chunk/categories';
 @use './chunk/contact';
@@ -16,6 +17,4 @@
 @use './chunk/pickup';
 @use './chunk/payment';
 @use './chunk/installation';
-@use './chunk/pickup';
-@use './chunk/payment';
 @use './chunk/footer';
