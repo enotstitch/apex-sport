@@ -11,6 +11,9 @@
 @use './chunk/stages';
 @use './chunk/offer';
 @use './chunk/categories';
+@use '../../node_modules/swiper/swiper';
+@use '../../node_modules/swiper/modules/navigation';
+@use './chunk/reviews';
 @use './chunk/contact';
 @use './chunk/hits';
 @use './chunk/delivery';
