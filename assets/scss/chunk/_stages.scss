@@ -56,4 +56,11 @@
 	&__title {
 		margin-bottom: 20px;
 	}
+
+	&__form {
+		& p {
+			display: flex;
+			gap: 15px;
+		}
+	}
 }
