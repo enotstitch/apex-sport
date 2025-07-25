@@ -183,7 +183,7 @@
 	font-weight: 800;
 	@include adaptive-font(52, 30);
 
-	&--color-red {
+	& span {
 		color: var(--second-accent-color);
 	}
 }
