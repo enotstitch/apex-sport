@@ -5,6 +5,10 @@
 		display: grid;
 		gap: 20px;
 		grid-template: auto/repeat(2, 1fr);
+
+		@media (max-width: 576px) {
+			grid-template: auto / 1fr;
+		}
 	}
 }
 
