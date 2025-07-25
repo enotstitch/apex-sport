@@ -125,6 +125,10 @@
 		position: sticky;
 		top: 65px;
 	}
+
+	@media (max-width: 992px) {
+		display: none;
+	}
 }
 
 .sidebar-list {

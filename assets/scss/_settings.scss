@@ -37,6 +37,11 @@ body {
 .main {
 	flex: 1 1 auto;
 	max-width: 750px;
+
+	@media (max-width: 992px) {
+		margin: 0 auto;
+		min-width: 0;
+	}
 }
 
 .section {
