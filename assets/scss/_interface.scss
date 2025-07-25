@@ -2,11 +2,9 @@
 @use './mixins/adaptive-font' as *;
 
 .logo {
-	display: flex;
-	align-items: center;
-
-	&__img {
-		max-width: 200px;
+	& img {
+		width: 200px;
+		height: auto;
 	}
 }
 
@@ -125,6 +123,10 @@
 		position: sticky;
 		top: 65px;
 	}
+
+	@media (max-width: 992px) {
+		display: none;
+	}
 }
 
 .sidebar-list {
@@ -234,8 +236,8 @@
 		margin-bottom: 20px;
 		padding-left: 50px;
 		font-family: var(--font-main);
-		font-size: 38px;
 		text-transform: uppercase;
+		@include adaptive-font(38, 28);
 
 		&::before {
 			content: '';
@@ -248,12 +250,25 @@
 			background-color: var(--accent-color);
 			transform: translateY(-50%);
 		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 15px;
+			padding-left: 40px;
+
+			&::before {
+				width: 30px;
+			}
+		}
 	}
 
 	&__description {
 		margin: 0;
 		max-width: 450px;
-		font-size: 18px;
+		@include adaptive-font(18, 16);
+	}
+
+	@media (max-width: 576px) {
+		margin-bottom: 40px;
 	}
 }
 
