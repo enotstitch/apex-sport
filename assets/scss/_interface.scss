@@ -117,6 +117,7 @@
 }
 
 .sidebar {
+	flex-shrink: 0;
 	padding: 65px 0;
 
 	&__nav {
@@ -376,7 +377,7 @@
 }
 
 .swiper {
-	width: 100%;
+	width: 600px;
 	min-height: 300px;
 
 	&-slide {
