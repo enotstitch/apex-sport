@@ -2,11 +2,9 @@
 @use './mixins/adaptive-font' as *;
 
 .logo {
-	display: flex;
-	align-items: center;
-
-	&__img {
-		max-width: 200px;
+	& img {
+		width: 200px;
+		height: auto;
 	}
 }
 
