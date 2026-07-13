@@ -20,6 +20,10 @@
 			background: var(--light-color);
 		}
 
+		@media (max-width: 992px) {
+			max-width: 100%;
+		}
+
 		@media (max-width: 576px) {
 			padding: 30px;
 		}

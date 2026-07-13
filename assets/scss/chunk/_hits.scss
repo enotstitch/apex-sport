@@ -2,6 +2,10 @@
 	&__cards {
 		display: flex;
 		gap: 15px;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
 }
 
@@ -18,7 +22,7 @@
 	}
 
 	&__inner {
-		padding: 25px 67px;
+		padding: 25px;
 	}
 
 	&__title {
@@ -32,5 +36,10 @@
 	&__link {
 		width: 100%;
 		text-align: center;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		max-width: 100%;
 	}
 }
